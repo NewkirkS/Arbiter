@@ -8,7 +8,7 @@ $(document).ready(function() {
     event.preventDefault();
     var url = $('#url').val();
     newArbiter.getEmotions(url);
-    //fuuuuck
+    $('#url').empty();
     var populateChart = function() {
       myChart.data.datasets[0].data[0] = newArbiter.anger;
       myChart.data.datasets[0].data[1] = newArbiter.disgust;
