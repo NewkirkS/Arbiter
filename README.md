@@ -1,18 +1,20 @@
-# _JS Template_
+# _Arbiter_
 
-#### _10-11-16_
+#### _10-12-16_
 
-#### By _**Stephen Newkirk**_
+#### By _**Stephen Newkirk &amp; Martin Cartledge**_
+
+<img src="/img/screenshot.png" alt="a screenshot of the site">
 
 ## Description
 
-_This is a template for JavaScript projects at Epicodus. Includes files for npm bower dependencies, a gulpfile with all basic tasks and directory skeleton._
+_Insert URL of choice into the Arbiter to begin analysis based on emotional tones found in content. Common subjects include: news articles, song lyrics, and social media (the more text the better)._
 
 ## Specifications
 
 | Behavior      | Input       |Output|
 | ------------- |-------------| -----|
-| Do stuff | Pizza | Magic Pizza |
+| Submit URL | www.pizzatown.com | anger: 0, disgust: 0, fear: 10, joy: 90, sadness: 0 |
 
 ## Setup/Installation Requirements
 
@@ -28,9 +30,11 @@ _Use these commands to create dev build and run the local server:_
 
 `gulp serve`
 
+_Visit the [Alchemy API website](http://www.alchemyapi.com/) to obtain an API key and create a .env file to hold it in the top level of the project folder._
+
 ## Known Bugs
 
-_None_
+_Some urls do not work with the Alchemy API (most notably A-Z Lyrics)._
 
 ## Support and contact details
 
@@ -39,12 +43,14 @@ _Stephen Newkirk: newkirk771@gmail.com_
 ## Technologies Used
 
 _HTML,
-JavaScript
-Sass
-Node.js_
+JavaScript,
+Sass,
+Node.js,
+Alchemy API,
+Chart.js_
 
 ### License
 
 *This webpage is licensed under the MIT license.*
 
-Copyright (c) 2016 **_Stephen Newkirk_**
+Copyright (c) 2016 **_Stephen Newkirk, Martin Cartledge_**
