@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/fonts"> -->
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
@@ -10,29 +11,36 @@
   </head>
   <body>
     <div class="container text-center">
+      <header>
       <h1>Arbiter</h1>
+      </header>
       <div class="row">
         <div class="col-md-4">
+          <img class="img" src="/img/research.png" alt="dude"/>
           <p>
-            Description here.
+            Insert URL of choice into the Arbiter to begin analysis based on emotional tones found in content. Common subjects include: news articles, song lyrics, and social media (the more text the better).
           </p>
         </div>
         <div class="col-md-4">
+          <img class="img" src="/img/dude.png" alt="dude"/>
           <p>
-            Description here.
+            Arbiter generates confidence scores for 5 emotions (anger, disgust, fear, joy, and sadness). Scores represent the probabilty by percentage that the corrensponding emotion is implied in text.
           </p>
         </div>
         <div class="col-md-4">
+          <img class="img" src="/img/statistics.png" alt="dude"/>
           <p>
-            Description here.
+            Using the Alchemy API, the Arbiter uses machine learning algorithms to detect emotions in words, phrases, punctuation, and overall sentiments from provided source.
           </p>
         </div>
       </div>
-      <h3>Enter URL:</h3>
-      <form id="url-form" class="form-group">
-        <input class="form-control" id="url" type="text">
-        <button class="btn" type="submit">Submit</button>
-      </form>
+      <div class="form">
+        <h3>Enter URL:</h3>
+        <form id="url-form" class="form-group">
+          <input class="form-control" id="url" type="text">
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
       <div id="results">
         <canvas id="myChart" width="400" height="400"></canvas>
 <script>
@@ -52,14 +60,14 @@ var myChart = new Chart(ctx, {
             data: [0, 0, 0, 0, 0],
             backgroundColor: [
                 "#e74c3c",
-                "#95a5a6",
+                "#27ae60",
                 "#9b59b6",
                 "#ffe760",
                 "#3498db"
             ],
             hoverBackgroundColor: [
                 "#e74c3c",
-                "#95a5a6",
+                "#27ae60",
                 "#9b59b6",
                 "#ffe760",
                 "#3498db"
