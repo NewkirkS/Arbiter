@@ -8,32 +8,15 @@ $(document).ready(function() {
     event.preventDefault();
     var url = $('#url').val();
     newArbiter.getEmotions(url);
-    var data = {
-    labels: [
-        "Anger",
-        "Disgust",
-        "Fear",
-        "Joy",
-        "Sadness"
-    ],
-    datasets: [
-        {
-            data: [newArbiter.anger, newArbiter.disgust, newArbiter.fear, newArbiter.joy, newArbiter.sadness],
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56",
-                "#F28EB2",
-                "#743119"
-            ],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56",
-                "#F28EB2",
-                "#743119"
-            ]
-        }]
-};
+    //fuuuuck
+    var populateChart = function() {
+      myChart.data.datasets[0].data[0] = newArbiter.anger;
+      myChart.data.datasets[0].data[1] = newArbiter.disgust;
+      myChart.data.datasets[0].data[2] = newArbiter.fear;
+      myChart.data.datasets[0].data[3] = newArbiter.joy;
+      myChart.data.datasets[0].data[4] = newArbiter.sadness;
+      myChart.update();
+    }
+    setInterval(populateChart, 100);
   });
 });
