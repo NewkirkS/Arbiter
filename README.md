@@ -20,7 +20,7 @@ _Insert URL of choice into the Arbiter to begin analysis based on emotional tone
 
 _After cloning, run the following commands in the terminal to install packages:_
 
-`npm install -1`
+`npm install`
 
 `bower install`
 
