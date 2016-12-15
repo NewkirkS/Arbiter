@@ -1,4 +1,4 @@
-# _Arbiter **Currently Inoperative**_
+# _Arbiter_
 
 #### _10-12-16_
 
@@ -8,7 +8,7 @@
 
 ## Description
 
-_NOTE: **This project is currently not functioning due to the API key being obtained during a temporary trial period.** Insert URL of choice into the Arbiter to begin analysis based on emotional tones found in content. Common subjects include: news articles, song lyrics, and social media (the more text the better)._
+_Insert URL of choice into the Arbiter to begin analysis based on emotional tones found in content. Common subjects include: news articles, song lyrics, and social media (the more text the better)._
 
 ## Specifications
 
